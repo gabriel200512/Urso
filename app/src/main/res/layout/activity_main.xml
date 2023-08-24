@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/urso"
+        android:id="@+id/imgUrso"
+        android:layout_centerHorizontal="true"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Urso bravo"
+        android:inputType="textPersonName"
+        android:id="@+id/editBola"
+        android:layout_below="@+id/imgUrso"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Urso marrom"
+        android:inputType="textPassword"
+        android:id="@+id/editMuito"
+        android:layout_below="@+id/editBola"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entrar"
+        android:id="@+id/buttonEntrar"
+        android:layout_below="@+id/editMuito"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sair"
+        android:id="@+id/buttonSair"
+        android:layout_toRightOf="@+id/buttonEntrar"
+        android:layout_below="@+id/editMuito"
+        />
+
+
+</RelativeLayout>
