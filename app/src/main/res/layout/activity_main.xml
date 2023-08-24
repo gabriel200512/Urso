@@ -7,14 +7,16 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgUrso"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/urso"
-        android:id="@+id/imgUrso"
         android:layout_centerHorizontal="true"
-
-        />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/urso" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +27,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Urso marrom"
+        android:hint="Urso calmo"
         android:inputType="textPassword"
         android:id="@+id/editMuito"
         android:layout_below="@+id/editBola"/>
@@ -45,5 +47,7 @@
         android:layout_below="@+id/editMuito"
         />
 
+
+</RelativeLayout>
 
 </RelativeLayout>
